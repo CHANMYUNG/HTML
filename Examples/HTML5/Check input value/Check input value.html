@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vaildation Example</title>
+  </head>
+  <body>
+    <form  action="register.php">
+      <input type="text" name="ID" placeholder="아이디를 입력해주세요" required pattern="[a-zA-Z][a-zA-z0-9][a-zA-z0-9]+">
+      <input type="email" name="email" placeholder="이메일을 입력해주세요">
+      <input type="submit">
+    </form>
+
+  <h3>입력값체크(유효성 검사) : 사용자가 입력한 값이 올바른지(?) 검사하는 기능</h3>
+<li>필수적으로 입력해야 하는 부분 : 속성 required 추가</li>
+<li>패턴에 맞게 입력해야 하는 부분 : 속성 pattern=에 정규 표현식 추가</li>
+*정규표현식 : HTML과는 다른 프로그래밍 언어([a-zA-z] : 알파벳 하나, . : 아무거나, + : 하나 이상, [0-9] : 숫자하나 <br>
+<br> -&gt;유효성 검사는 사용자가 입력하기 쉽게 하기 위한 장치로 인식해야지, 검사를 통과한 값들을 무조건적으로
+신뢰해서는 안됨.
+  </body>
+</html>
